@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE LINE DESINGS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+           
+
+           <div class="img"> <img src="LOGOS BL-02.png" width="70px" height="70"> 
+        </div>
+                    
+                                                 
+                                        
+        <div class="logo">BLUE LINE DESINGS</div>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav>
+            <ul class="menu">
+                
+                <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="#" class="dropdown">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="#">-Logos</a></li>
+                        <li><a href="#">-Lonas</a></li>
+                        <li><a href="#">-Diseño 3d</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+         
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar..." aria-label="Buscar">
+            <button type="submit">Buscar</button>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const menu = document.querySelector('.menu');
+                const submenuToggles = document.querySelectorAll('.menu > li > a');
+                let overlay = null;
+
+                // Mostrar/ocultar menú principal
+                menuToggle.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                });
+
+                // Mostrar submenú con fondo traslúcido
+                submenuToggles.forEach(toggle => {
+                    toggle.addEventListener('click', (e) => {
+                        const submenu = toggle.nextElementSibling;
+                        if (submenu && submenu.classList.contains('submenu')) {
+                            e.preventDefault();
+
+                            // Crear el overlay si no existe
+                            if (!overlay) {
+                                overlay = document.createElement('div');
+                                overlay.className = 'submenu-overlay';
+                                document.body.appendChild(overlay);
+                            }
+
+                            // Clonar y mostrar el submenú en el overlay
+                            const clonedSubmenu = submenu.cloneNode(true);
+                            overlay.innerHTML = ''; // Limpia contenido previo
+                            overlay.appendChild(clonedSubmenu);
+                            overlay.classList.add('active');
+
+                            // Cerrar el overlay al hacer clic afuera
+                            overlay.addEventListener('click', () => {
+                                overlay.classList.remove('active');
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+
+  
+        </script>
+        
+    </header>
+    <main>
+       
+  <!-- Apartado desplegable -->
+  <button class="collapsible"><h1><span style="color: #000000;">¿Qué es lo que hacemos?</span></h1></button>
+  <div class="content">
+      <p>Nuestra pasión por el diseño gráfico no solo define quiénes somos, sino que también guía cada uno de nuestros proyectos.
+
+        En Blue Líne Designs, entendemos que el diseño es más que solo imágenes y colores. Es una herramienta poderosa que puede transformar ideas en realidades visuales y ayudar a las marcas a contar su historia de una manera única y efectiva. Nuestro objetivo es crear soluciones visuales que no solo se vean bien, sino que también resuenen con la audiencia.
+        
+        <h3><span style="color: #000000;">¿Qué hacemos exactamente? Nos especializamos en:</span></h3>
+        
+        <p ><font color="black">1. Identidad Corporativa:</font> Trabajamos con empresas para desarrollar su imagen de marca, desde logotipos hasta manuales de estilo. Creemos que una identidad fuerte es crucial para destacar en un mercado competitivo.
+        
+            <p tex aling: left;><font color="black">2. Diseño de Publicidad:</font> Creamos materiales publicitarios atractivos que capturan la atención y comunican el mensaje de manera clara y efectiva, ya sea en medios impresos o digitales.
+        
+                <p tex aling: left;><font color="black">3. Diseño Web:</font> Nos dedicamos a construir sitios web intuitivos y visualmente impactantes que no solo sean funcionales, sino que también ofrezcan una experiencia de usuario excepcional.
+        
+                    <p tex aling: left;><font color="black">4. Packaging y Diseño de Productos:</font> El empaque es a menudo el primer contacto que un cliente tiene con un producto. Nuestro equipo se asegura de que cada diseño de empaque sea atractivo y refleje la esencia de la marca.
+        
+                        <p> Desde revistas hasta folletos, trabajamos en cada detalle para crear un diseño editorial que no solo sea hermoso, sino que también cuente una historia coherente.
+        
+                            <p><span style="color: #000000;;"> En Blue Líne Designs, creemos firmemente en la colaboración. Trabajamos de la mano con nuestros clientes, escuchando sus ideas y entendiendo sus necesidades, para así crear soluciones personalizadas que realmente representen su visión.
+        
+        En conclusión, en Blue Líne Designs no solo creamos diseños; construimos conexiones visuales que ayudan a las empresas a crecer y destacar. Estamos emocionados por el futuro y por las posibilidades que vienen con cada nuevo proyecto.
+    </span></p>
+      <button class="collapsible"><h2><span style="color: #000000;">Mision</span></h2></button>
+      <div class="content">
+          <p>En Blue Líne Designs, nuestra misión es proporcionar soluciones de diseño gráfico innovadoras y personalizadas que ayuden a nuestros clientes a contar su historia de manera visual y efectiva. Nos comprometemos a entender las necesidades únicas de cada proyecto, creando identidades de marca impactantes y diseños que inspiren y conecten con sus audiencias.</p>
+      </div>
+      <button class="collapsible"><h2><span style="color: #000000;">Vsion</span></h2></button>
+      <div class="content">
+          <p>Nuestra visión es ser reconocidos como líderes en el ámbito del diseño gráfico, transformando la percepción de las marcas a través de creatividad y excelencia. Aspiramos a ser el socio preferido de empresas en todo el mundo, impulsando su crecimiento mediante soluciones visuales que no solo cumplan con sus expectativas, sino que las superen.</p>
+      </div>
+  </div>
+
+        <h1>Nuestros servicios Principales</h1>
+
+
+            <div class="image-grid">
+                <div class="card">
+                    <h3>Imagen corporativa</h3>
+                    <img src="logo.jpg" alt="Imagen 1">
+                    <p>Hoy en día, la imagen corporativa de una empresa es mucho más que un logotipo;
+                         nuestro objetivo es ayudar a construir
+                    una identidad sólida y profesional que se destaque en un mercado competitivo.</p>
+                </div>
+                <div class="card">
+                    <h3>Publicidad</h3>
+                    <img src="publicidad.jpg" alt="Imagen 2">
+                    <p>te ofrecemos soluciones publicitarias que captan la atención 
+                        de tu público objetivo, creando una conexión visual única con 
+                        tu marca. Ya sea para una campaña en redes sociales, un cartel 
+                        para tu negocio, o cualquier otra necesidad de publicidad, 
+                        estamos aquí para ayudarte a comunicar tu mensaje de manera efectiva y profesional.</p>
+                </div>
+                <div class="card">
+                    <h3>Impresion</h3>
+                    <img src="impresion1.png"  width="100" height="100">
+                    <p>Ya sea que necesites tarjetas de presentación,
+                         folletos, carteles, camisetas personalizadas, 
+                         o cualquier material impreso, en Blue Line Designs 
+                         tenemos la experiencia y la tecnología para hacerlo
+                          realidad. Trabajamos con materiales de la mejor 
+                          calidad para garantizar que tus productos finales no solo sean atractivos, 
+                          sino también duraderos.</p>
+                </div>
+            </div>
+    
+            <div class="floating-buttons">
+                
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="iconos pagina web-02.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="iconos pagina web-03.png" alt="Instagram">
+                </a>
+                <a href="https://www.behance.net/victorflorenc" target="_blank">
+                    <img src="iconos pagina web_Mesa de trabajo 1.png" alt="Twitter">
+                </a>
+                
+            
+                    <button class="chat-toggle">
+                        <img src="whatssap-04.png" alt="Chat" />
+                    </button>
+                    <div class="chat-box">
+                        <div class="chat-header">
+                            <h4>Chat de Ayuda</h4>
+                        </div>
+                        <div class="chat-body">
+                            <p>¿Tienes dudas? No dudes en contactarnos, esperamos resolver tus dudas. Recuerda que se puede demorar un poco. Para atención más directa, puedes mandar mensaje a:</p>
+                            <a href="https://api.whatsapp.com/send/?phone=5583449235&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const chatToggle = document.querySelector('.chat-toggle');
+                        const chatBox = document.querySelector('.chat-box');
+                
+                        chatToggle.addEventListener('click', () => {
+                            const isChatOpen = chatBox.style.display === 'block';
+                            chatBox.style.display = isChatOpen ? 'none' : 'block';
+                        });
+                    });
+                </script>
+                                
+
+
+        
+                </a>
+            </div>
+<h1><span style="color: rgb(0, 0, 49);">CURSOS</span></h1>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <h3>Photoshop</h3>
+                            <img src="CURSOS CARUSEL_Mesa de trabajo 1.jpg" alt="Curso 1">
+                           <h4><span style="color: rgb(0, 0, 109);">¿Qué aprenderás en nuestro curso de Photoshop?</span></h4>
+                            <p>En este curso, aprenderás a manejar las herramientas 
+                                fundamentales de Photoshop,
+                                Además, exploraremos técnicas avanzadas, como el diseño de composiciones
+                                Aprenderás a utilizar las herramientas de retoque más avanzadas para manipular imágenes y realizar montajes.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" >
+                        <div class="carousel-content">
+                            <h3>Fotografia</h3>
+                            <img src="CURSOS CARUSEL-02.jpg" alt="Curso 2">
+                            <h4><span style="color: rgb(0, 0, 109);">¡Bienvenidos al curso de Fotografía de Blue Line Designs!</span></h4>
+                            <p> En Blue Line Designs , entendemos que la fotografía es mucho más
+                                 que solo capturar imágenes; es una forma de arte, una herramienta
+                                  poderosa para contar historias y expresar creatividad. Nuestro 
+                                  curso de fotografía está diseñado para llevarte desde lo más 
+                                  básico hasta técnicas avanzadas, brindándote las habilidades 
+                                  necesarias para capturar momentos, crear composiciones impactantes 
+                                  y dominar la técnica detrás de cada disparo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <h3>Ilustrator</h3>
+                            <img src="CURSOS CARUSEL-03.jpg" alt="Curso 2">
+                            <h4><span style="color: rgb(0, 0, 109);">¡Bienvenidos al curso de Adobe Illustrator impartido por Blue Line Designs!</span></h4>
+                            <p>En este curso, te sumergirás en el apasionante mundo del diseño gráfico, 
+                                aprendiendo a dominar Adobe Illustrator , una de las herramientas más poderosas
+                                 y utilizadas en la industria del diseño. Nuestro objetivo es que, al finalizar 
+                                 el curso, tengas las habilidades necesarias para crear diseños profesionales 
+                                 y proyectos impresionantes.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <h3>Ligthroom</h3>
+                            <img src="CURSOS CARUSEL-04.jpg" alt="Curso 2">
+                            <h4><span style="color: rgb(0, 0, 109);">¿Qué aprenderás en nuestro curso de Ligthroom?</span></h4>
+                            <p>En Blue Line Designs, sabemos lo importante que es para 
+                                los fotógrafos y diseñadores dominar las herramientas 
+                                adecuadas para llevar sus imágenes al siguiente nivel. 
+                                Por eso, te invitamos a unirte a nuestro Curso de Lightroom ,
+                                 donde aprenderás no solo las funcionalidades esenciales, 
+                                 sino También técnicas avanzadas para perfeccionar tus 
+                                 ediciones y lograr un acabado profesional en tus fotos..</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <button class="carousel-prev" aria-label="Anterior">&#10094;</button>
+                <button class="carousel-next" aria-label="Siguiente">&#10095;</button>
+                <div class="carousel-dots"></div>
+            </div>
+
+            <section id="camisetas-personalizadas" class="personalizadas-section">
+                <h1><span style="color: rgb(0, 0, 49);"> Camisetas Personalizadas</span></h1>
+                <div class="personalizadas-container">
+                    <div class="personalizada-item">
+                        <img src="bordado.jpg" alt="Bordado">
+                        <div class="item-footer">
+                            <span>Bordado</span>
+                            <button class="toggle-info">+</button>
+                        </div>
+                        <div class="item-info">
+                            <p>El bordado es una técnica que utiliza hilos para personalizar prendas, ofreciendo un acabado duradero y elegante.</p>
+                        </div>
+                    </div>
+                    <div class="personalizada-item">
+                        <img src="impresion digital.jpg" alt="Impresión Digital">
+                        <div class="item-footer">
+                            <span>Impresión Digital</span>
+                            <button class="toggle-info">+</button>
+                        </div>
+                        <div class="item-info">
+                            <p>La impresión digital permite plasmar diseños complejos directamente sobre la tela con gran detalle y calidad.</p>
+                        </div>
+                    </div>
+                    <div class="personalizada-item">
+                        <img src="serigrafia.jpg" alt="Serigrafía">
+                        <div class="item-footer">
+                            <span>Serigrafía</span>
+                            <button class="toggle-info">+</button>
+                        </div>
+                        <div class="item-info">
+                            <p>La serigrafía es una técnica clásica que utiliza plantillas y tinta para crear diseños vibrantes y duraderos.</p>
+                        </div>
+                    </div>
+                    <div class="personalizada-item">
+                        <img src="teñido.jpg" alt="Teñidos Artesanales">
+                        <div class="item-footer">
+                            <span>Teñidos </span>
+                            <button class="toggle-info">+</button>
+                        </div>
+                        <div class="item-info">
+                            <p>Los teñidos artesanales ofrecen un toque único y artístico con patrones exclusivos y colores vivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.personalizada-item');
+
+    items.forEach(item => {
+        const toggleButton = item.querySelector('.toggle-info');
+
+        toggleButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            // Cerrar todos los contenedores activos antes de abrir el actual
+            items.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // Alternar el estado del contenedor actual
+            item.classList.toggle('active');
+        });
+    });
+});
+
+
+
+
+            </script>
+
+<section id="piezas-impresion">
+    <h2><span style="color: rgb(0, 0, 49);">Piezas para Impresión</span></h2>
+    <div class="container">
+      <div class="item">
+        <img src="camisetas lisas.jpg" alt="Camisetas Lisas">
+        <div class="item-description">
+          <h3>Camisetas Lisas</h3>
+          <p>10 pz: $500, 15 pz: $600, 20 pz: $700, 25 pz: $800</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="gorras.jpg" alt="Gorras sin Bordado">
+        <div class="item-description">
+          <h3>Gorras sin Bordado</h3>
+          <p>10 pz: $500, 15 pz: $600, 20 pz: $700, 25 pz: $800</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="folleto.jpg" alt="Millar de Folletos">
+        <div class="item-description">
+          <h3>Millar de Folletos</h3>
+          <p>1,000 pz: $360</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="tarjetas.jpg" alt="Millar de Tarjetas">
+        <div class="item-description">
+          <h3>Millar de Tarjetas</h3>
+          <p>1,000 pz: $350</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="baners.jpg" alt="Baners">
+        <div class="item-description">
+          <h3>Baners</h3>
+          <p>$120 m²</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="stickers.jpg" alt="Stickers">
+        <div class="item-description">
+          <h3>Stickers</h3>
+          <p>$50 plantilla 30 x 40cm</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="pines.jpg" alt="Pines 5cm">
+        <div class="item-description">
+          <h3>Pines 5cm</h3>
+          <p>100 pz: $200</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<section id="agendar-pedido">
+    <div class="container">
+      <h2>Agenda tu Pedido</h2>
+      <p>Elige la fecha y hora para tu pedido y nuestros diseñadores se pondrán en contacto contigo.</p>
+      
+      <form id="form-pedido">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="telefono">Número de Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="fecha">Fecha del Pedido</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="hora">Hora del Pedido</label>
+          <input type="time" id="hora" name="hora" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="detalles">Detalles del Pedido</label>
+          <textarea id="detalles" name="detalles" rows="4" placeholder="Describe tu pedido (opcional)"></textarea>
+        </div>
+  
+        <button type="submit" class="btn-agendar">Agendar Pedido</button>
+      </form>
+    </div>
+  </section>
+  
+
+
+
+
+            <section id="testimonios">
+  <h2>Lo que dicen nuestros clientes</h2>
+  <div class="testimonios-container">
+    <div class="testimonio">
+      <p>"¡Excelente servicio y calidad en los productos! Definitivamente volveré a pedir más." - Juan Pérez</p>
+    </div>
+    <div class="testimonio">
+      <p>"Me encantaron las camisetas personalizadas, justo lo que buscaba para mi empresa." - Laura González</p>
+    </div>
+    <div class="testimonio">
+      <p>"¡Rápido y confiable! Mi pedido llegó a tiempo y con la mejor calidad." - Carlos Sánchez</p>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-columns">
+            <div>
+                <h4>Contacto</h4>
+                <p>Correo: contacto@bluelinedesigns.com</p>
+                <p>Teléfono: 55 83 44 92 35</p>
+            </div>
+            <div>
+                <h4>Ciudades con servicio</h4>
+                <p>Ciudad de México, Monterrey, Guadalajara</p>
+            </div>
+            <div>
+                <h4>Preguntas frecuentes</h4>
+                <ul>
+                    <li><a href="#">¿Cómo solicitar un servicio?</a></li>
+                    <li><a href="#">¿Cuáles son los tiempos de entrega?</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Atención a clientes</h4>
+                <p>Lunes a Viernes: 9:00 - 18:00</p>
+                <p>Sábado: 9:00 - 14:00</p>
+            </div>
+            <div class="footer-logo">
+                <img src="LOGOS BL-02.png"  alt="Logo Blue Line Designs">
+            </div>
+        </div>
+        <p>© Todos los derechos reservados 2025 | <a href="#">Aviso de privacidad</a></p>
+    </footer>
+    
+
+    <script>
+        // Lógica para manejar los apartados desplegables
+        document.addEventListener('DOMContentLoaded', () => {
+            const collapsibles = document.querySelectorAll('.collapsible');
+
+            collapsibles.forEach(button => {
+                button.addEventListener('click', () => {
+                    button.classList.toggle('active');
+                    const content = button.nextElementSibling;
+
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousel = document.querySelector('.carousel');
+        const items = document.querySelectorAll('.carousel-item');
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
+        const dotsContainer = document.querySelector('.carousel-dots');
+        let currentIndex = 0;
+
+        // Crear puntos de navegación
+        function createDots() {
+            dotsContainer.innerHTML = '';
+            items.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.className = index === currentIndex ? 'active' : '';
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+            createDots();
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+            updateCarousel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+        });
+
+        createDots();
+        updateCarousel();
+    });
+</script>
+
+
+
+
+</body>
+</html>
